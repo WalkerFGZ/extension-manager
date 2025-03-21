@@ -19,10 +19,10 @@ export default {
           500: "hsl(3, 71%, 56%)",
           700: "hsl(3, 77%, 44%)",
         },
-        gradient: {
-          light: "linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%)",
-          dark: "linear-gradient(180deg, #040918 0%, #091540 100%)",
-        },
+      },
+      backgroundImage: {
+        "gradient-light": "linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%)",
+        "gradient-dark": "linear-gradient(180deg, #040918 0%, #091540 100%)",
       },
       fontFamily: {
         sans: ["Noto Sans", "sans-serif"],

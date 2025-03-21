@@ -1,10 +1,16 @@
 import "./App.css";
 
+import Header from "./components/Header";
+
 function App() {
   return (
-    <h1 className="bg-neutral-900 text-neutral-100 font-sans">
-      Whereas recognition of the inherent dignity
-    </h1>
+    <div className="bg-gradient-light text-neutral-700 min-h-screen">
+      <div className="max-w-[1440px] px-32 pt-10">
+        <Header />
+        <section>filtros</section>
+        <main>cards</main>
+      </div>
+    </div>
   );
 }
 
