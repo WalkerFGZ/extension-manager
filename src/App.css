@@ -4,3 +4,11 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
 }
+
+.button-primary {
+  @apply bg-neutral-0 w-auto py-1 px-4 border rounded-2xl;
+}
+
+.button-primary:hover {
+  @apply border border-red-400;
+}
