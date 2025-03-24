@@ -11,7 +11,7 @@ function App() {
   const [extensions, setExtensions] = useState<Extension[]>(initialData);
   return (
     <div className="flex justify-center bg-gradient-light text-neutral-700 min-h-screen">
-      <div className="max-w-[1440px] w-full px-32 pt-10">
+      <div className="max-w-[1440px] md:px-32 px-4 w-full pt-4 md:pt-10">
         <Header />
         <Filters data={initialData} setExtensions={setExtensions} />
         <ListExtensions data={extensions} />

@@ -8,7 +8,7 @@ const Header = () => {
         <img src={MainLogo} alt="Extensions Logo" />
       </div>
 
-      <div className="bg-neutral-100 flex items-center px-3 py-3 rounded-xl cursor-pointer">
+      <div className="bg-neutral-100 hover:bg-neutral-300 flex items-center px-3 py-3 rounded-xl cursor-pointer">
         <img src={ThemeLogo} alt="Theme Logo" className="w-5" />
       </div>
     </header>

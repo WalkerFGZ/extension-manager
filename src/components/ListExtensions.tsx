@@ -16,7 +16,7 @@ const ListExtensions = ({ data }: { data: Extension[] }) => {
             transition={{
               duration: 0.3,
               delay: index * 0.03,
-              ease: "easeOut",
+              ease: "circInOut",
               layout: { duration: 0.3 }
             }}
           >

@@ -6,9 +6,9 @@ const ExtensionCard = ({ logo, name, description, isActive }: Extension) => {
     <article className="bg-neutral-0 rounded-2xl p-4 border-neutral-200 border">
       <div className="flex gap-4">
         <div>
-          <img src={`src/${logo}`} />
+          <img src={`src/${logo}`} className="w-[60px] min-w-[60px]" alt={name} />
         </div>
-        <div className="max-w-[270px] pb-10">
+        <div className="max-w-[270px] pb-5 md:pb-10">
           <h2 className="text-lg font-bold text-neutral-800 text-balance">{name}</h2>
           <p className="text-neutral-500">
             {description}
