@@ -1,26 +1,27 @@
 import ToggleExtensionStatus from "./ToggleExtensionStatus";
-import icon from "../assets/images/logo-link-checker.svg";
+import { Extension } from "../vite-env";
 
-const ExtensionCard = () => {
+const ExtensionCard = ({ logo, name, description, isActive }: Extension) => {
   return (
-    <article className="bg-neutral-0 rounded-xl p-4">
+    <article className="bg-neutral-0 rounded-2xl p-4 border-neutral-200 border">
       <div className="flex gap-4">
         <div>
-          <img src={icon} />
+          <img src={`src/${logo}`} />
         </div>
-        <div className="max-w-[250px] pb-4">
-          <h2 className="text-lg font-bold text-neutral-800">DevLens</h2>
+        <div className="max-w-[270px] pb-10">
+          <h2 className="text-lg font-bold text-neutral-800 text-balance">{name}</h2>
           <p className="text-neutral-500">
-            Quickly inspect page layouts and visualize element boundaries
+            {description}
           </p>
         </div>
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pb-2">
         <button className="button-primary">Remove</button>
-        <ToggleExtensionStatus />
+        <ToggleExtensionStatus status={isActive} />
       </div>
     </article>
   );
 };
 
 export default ExtensionCard;
+

@@ -5,18 +5,11 @@ import { useState } from "react";
 
 const ListExtensions = () => {
   const [extensions, setExtensions] = useState<Extension[]>(data);
-
-  console.log(data);
-
   return (
-    <section>
-      <ExtensionCard />
-      {/* {extensions?.map((extension) => (
-        <div key={extension.name}>
-          <h2>{extension.name}</h2>
-          <p>{extension.description}</p>
-        </div>
-      ))} */}
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-7">
+      {extensions?.map((extension) => (
+        <ExtensionCard key={extension.name} {...extension} />
+      ))}
     </section>
   );
 };
