@@ -1,7 +1,7 @@
-import MainDarkLogo from "../assets/images/logo-dark.svg";
-import MainLogo from "../assets/images/logo.svg";
-import ThemeDarkLogo from "../assets/images/icon-moon.svg";
-import ThemeLightLogo from "../assets/images/icon-sun.svg";
+import MainDarkLogo from "../../public/images/logo-dark.svg";
+import MainLogo from "../../public/images/logo.svg";
+import ThemeDarkLogo from "../../public/images/icon-moon.svg";
+import ThemeLightLogo from "../../public/images/icon-sun.svg";
 
 const Header = ({
   isDarkTheme,
