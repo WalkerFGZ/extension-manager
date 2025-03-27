@@ -7,7 +7,7 @@ const ExtensionCard = ({ logo, name, description, isActive }: Extension) => {
       <div className="flex gap-4">
         <div>
           <img
-            src={`/public/images/${logo}`}
+            src={`/images/${logo}`}
             className="w-[60px] min-w-[60px]"
             alt={name}
           />
